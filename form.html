@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      body {
+        background-image: url("./doodle-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .form-frame {
+        margin-top: 100px;
+        width: 500px;
+        height: 500px;
+        margin: 100px auto auto;
+        background-color: rgb(0, 0, 0, 0.5);
+        padding-left: 50px;
+        padding-top: 100px;
+      }
+      label {
+        /* text-align: center; */
+        display: inline-block;
+        width: 200px;
+        font-family: monospace;
+        font-size: 25px;
+        font-weight: 900;
+        color: white;
+
+        /* border-spacing:  50px; */
+      }
+      input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-bottom-style: groove;
+        border-left-style: hidden;
+        background-color: rgb(0, 0, 0, 0.1);
+      }
+      .no-outline:focus {
+        outline: none;
+      }
+      hr {
+        border: 1px solid;
+        border-style: dotted;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-frame">
+      <h1
+        style="
+          font-family: Sacramento;
+          font-size: 70px;
+          color: white;
+          font-weight: 900;
+        "
+      >
+        Registration Form
+      </h1>
+      <hr />
+      <form style="height: 500px">
+        <label for="name">Name <span>:</span></label>
+        <input class="no-outline" type="text" name="name" required />
+        <br />
+        <label for="email">Email <span>:</span></label>
+        <input type="email" name="email" required />
+        <br />
+        <label for="phone-number">Phone Number<span>:</span></label>
+        <input type="number" name="phone-number" required />
+        <br />
+        <label for="College">College <span>:</span></label>
+        <input type="text" name="College" required />
+        <br />
+        <div style="margin-left: 200px; margin-top: 50px">
+          <input
+            style="background-color: white; font-size: 15px; border-radius: 5px"
+            type="submit"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
